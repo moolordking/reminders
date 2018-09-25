@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>Numone</title>
+		<style>
+		@font-face { font-family: POUTTU; src: url('POUTTU.ttf'); }
+		@font-face { font-family: overload; src: url('overload.ttf'); }
+		body{
+			background-image: url("backdrop.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+
+		#reminderbox {
+			opacity: 0.4;
+			resize: vertical;
+			height: 76vh;
+			width: 100%;
+			text-align: left;
+			color: black;
+			font-size: 40px;
+			font-family: POUTTU;
+			border-radius: 20px;
+			margin-top: 1vh;
+		}
+
+		#menu {
+			width: 100%;
+			height: 15vh;
+			background-color: rgba(66, 182, 244,0.6);
+			border-radius: 20px;
+			margin-top: 1vh;
+		}
+		img {
+			height: 13vh;
+			margin-left: 2vh;
+			margin-top: 1vh;
+		}
+		</style>
+	</head>
+	<body>
+			<div id="menu"><img id="savereminder" src="saveicon.png" onclick="savethereminder()"></div>
+			<center>
+			<textarea id="reminderbox" placeholder="Reminder"></textarea>
+
+		</center>
+		<script>
+			document.getElementById("reminderbox").innerHTML = localStorage.reminder.replace("untitled", " ");
+
+			function savethereminder() {
+				localStorage.reminder = document.getElementById("reminderbox").value;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.reminderapp.mobile" version="1.0" xmlns="http://www.w3.org/ns/widgets">
+  <name>Reminders</name>
+  <description>A app for reminders</description>
+  <author email="FBEmail2007@gmail.com" href="http://www.myapp.com">malachi bance</author>
+  <preference name="phonegap-version" value="cli-6.5.0" />
+  <preference name="permissions" value="none" />
+  <preference name="orientation" value="portrait" />
+  <preference name="target-device" value="universal" />
+  <preference name="fullscreen" value="false" />
+
+  <icon src="icon.png" />
+  <splash src="icon.png" />
+</widget>
